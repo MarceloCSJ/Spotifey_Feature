@@ -31,3 +31,15 @@ C:\workplace\ArtistConnect\ArtistConnect\ArtistConnect.Classes\obj\Debug\net9.0\
 C:\workplace\ArtistConnect\ArtistConnect\ArtistConnect.Classes\obj\Debug\net9.0\refint\ArtistConnect.Classes.dll
 C:\workplace\ArtistConnect\ArtistConnect\ArtistConnect.Classes\obj\Debug\net9.0\ArtistConnect.Classes.pdb
 C:\workplace\ArtistConnect\ArtistConnect\ArtistConnect.Classes\obj\Debug\net9.0\ref\ArtistConnect.Classes.dll
+C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Classes\bin\Debug\net9.0\ArtistConnect.Classes.deps.json
+C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Classes\bin\Debug\net9.0\ArtistConnect.Classes.dll
+C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Classes\bin\Debug\net9.0\ArtistConnect.Classes.pdb
+C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Classes\obj\Debug\net9.0\ArtistConnect.Classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Classes\obj\Debug\net9.0\ArtistConnect.Classes.AssemblyInfoInputs.cache
+C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Classes\obj\Debug\net9.0\ArtistConnect.Classes.AssemblyInfo.cs
+C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Classes\obj\Debug\net9.0\ArtistConnect.Classes.csproj.CoreCompileInputs.cache
+C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Classes\obj\Debug\net9.0\ArtistConnect.Classes.sourcelink.json
+C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Classes\obj\Debug\net9.0\ArtistConnect.Classes.dll
+C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Classes\obj\Debug\net9.0\refint\ArtistConnect.Classes.dll
+C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Classes\obj\Debug\net9.0\ArtistConnect.Classes.pdb
+C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Classes\obj\Debug\net9.0\ref\ArtistConnect.Classes.dll

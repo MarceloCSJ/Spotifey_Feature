@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workplace\\ArtistConnect\\ArtistConnect\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj": {}
+    "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj": {}
   },
   "projects": {
-    "C:\\workplace\\ArtistConnect\\ArtistConnect\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj": {
+    "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workplace\\ArtistConnect\\ArtistConnect\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
+        "projectUniqueName": "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
         "projectName": "ArtistConnect.Classes",
-        "projectPath": "C:\\workplace\\ArtistConnect\\ArtistConnect\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\workplace\\ArtistConnect\\ArtistConnect\\ArtistConnect.Classes\\obj\\",
+        "projectPath": "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
+        "packagesPath": "C:\\Users\\snati\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.Classes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\snati\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.317/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
