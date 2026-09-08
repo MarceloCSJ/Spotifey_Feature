@@ -1,8 +1,10 @@
+using ArtistConnect.Classes.DAO;
+
 namespace ArtistConnect.Classes;
  
 public class MusicaServicos
 {
-    private List<Musica> musicas = new List<Musica>();
+    private readonly MusicaDAO _musicaDAO = new();
  
     public void CadastrarMusica()
     {
@@ -17,14 +19,20 @@ public class MusicaServicos
         Console.Write("Digite a duração da música (ex: 3:45): ");
         musica.Duracao = Console.ReadLine()!;
  
-        musicas.Add(musica);
+        _musicaDAO.Adicionar(musica);
  
         Console.WriteLine("Música cadastrada com sucesso!");
     }
  
+    public List<Musica> ObterMusicas()
+    {
+        return _musicaDAO.ObterTodos();
+    }
+
     public void ListarMusicas()
     {
         Console.WriteLine("Lista de Músicas Cadastradas:");
+        var musicas = ObterMusicas();
         if (musicas.Count == 0)
         {
             Console.WriteLine("Nenhuma música cadastrada.");
@@ -42,16 +50,7 @@ public class MusicaServicos
         Console.Write("Digite o título da música que deseja alterar: ");
         string tituloBusca = Console.ReadLine()!;
  
-        Musica? musicaEncontrada = null;
- 
-        foreach (Musica musica in musicas)
-        {
-            if (musica.Titulo == tituloBusca)
-            {
-                musicaEncontrada = musica;
-                break;
-            }
-        }
+        Musica? musicaEncontrada = _musicaDAO.BuscarPorTitulo(tituloBusca);
  
         if (musicaEncontrada == null)
         {
@@ -70,16 +69,7 @@ public class MusicaServicos
         Console.Write("Digite o título da música que deseja remover: ");
         string tituloBusca = Console.ReadLine()!;
  
-        Musica? musicaEncontrada = null;
- 
-        foreach (Musica musica in musicas)
-        {
-            if (musica.Titulo == tituloBusca)
-            {
-                musicaEncontrada = musica;
-                break;
-            }
-        }
+        Musica? musicaEncontrada = _musicaDAO.BuscarPorTitulo(tituloBusca);
  
         if (musicaEncontrada == null)
         {
@@ -88,6 +78,6 @@ public class MusicaServicos
         }
  
         Console.WriteLine($"A música '{musicaEncontrada.Titulo}' foi removida com sucesso.");
-        musicas.Remove(musicaEncontrada);
+        _musicaDAO.Remover(musicaEncontrada);
     }
 }

@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Anderson\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\workplace\\ArtistConnect\\ArtistConnect\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
+      "projectUniqueName": "C:\\workplace\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
       "projectName": "ArtistConnect.Classes",
-      "projectPath": "c:\\workplace\\ArtistConnect\\ArtistConnect\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "c:\\workplace\\ArtistConnect\\ArtistConnect\\ArtistConnect.Classes\\obj\\",
+      "projectPath": "C:\\workplace\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
+      "packagesPath": "C:\\Users\\Anderson\\.nuget\\packages\\",
+      "outputPath": "C:\\workplace\\Spotifey_Feature\\ArtistConnect.Classes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Anderson\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -44,7 +44,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -60,12 +60,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[9.0.15, 9.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[9.0.15, 9.0.15]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[9.0.15, 9.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.317/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

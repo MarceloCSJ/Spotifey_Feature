@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sj5a8BC5/WA=",
+  "dgSpecHash": "mE2z3UzPJ6M=",
   "success": true,
-  "projectFilePath": "C:\\workplace\\ArtistConnect\\ArtistConnect\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\workplace\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anderson\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.15\\microsoft.netcore.app.ref.9.0.15.nupkg.sha512",
+    "C:\\Users\\Anderson\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.15\\microsoft.windowsdesktop.app.ref.9.0.15.nupkg.sha512",
+    "C:\\Users\\Anderson\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.15\\microsoft.aspnetcore.app.ref.9.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

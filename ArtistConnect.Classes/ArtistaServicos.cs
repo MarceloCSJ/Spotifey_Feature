@@ -1,8 +1,10 @@
+using ArtistConnect.Classes.DAO;
+
 namespace ArtistConnect.Classes;
  
 public class ArtistaServicos
 {
-    private List<Artista> artistas = new List<Artista>();
+    private readonly ArtistaDAO _artistaDAO = new();
      
     public void CadastrarArtista()
     {
@@ -17,14 +19,20 @@ public class ArtistaServicos
         Console.Write("Digite seu gênero musical: ");
         artista.GeneroMusical = Console.ReadLine()!;
         
-        artistas.Add(artista);
+        _artistaDAO.Adicionar(artista);
  
         Console.WriteLine("Artista cadastrado com sucesso!");
     }
  
+    public List<Artista> ListarArtistas()
+    {
+        return _artistaDAO.ObterTodos();
+    }
+
     public void ListarArtista()
     {
         Console.WriteLine("Lista de Artistas Cadastrados:");
+        var artistas = ListarArtistas();
         if (artistas.Count == 0)
         {
             Console.WriteLine("Nenhum artista cadastrado.");
@@ -43,16 +51,7 @@ public class ArtistaServicos
         Console.Write("Digite o nome do Artista: ");
         string nomeBusca = Console.ReadLine()!;
  
-        Artista? artistaEncontrado = null;
- 
-        foreach (Artista artista in artistas)
-        {
-            if (artista.Nome == nomeBusca)
-            {
-                artistaEncontrado = artista;
-                break;
-            }
-        }
+        Artista? artistaEncontrado = _artistaDAO.BuscarPorNome(nomeBusca);
         if (artistaEncontrado == null)
         {
             Console.WriteLine("Artista não encontrado.");
@@ -70,16 +69,7 @@ public class ArtistaServicos
         Console.Write("Digite o nome do Artista que deseja remover: ");
         string nomeBusca = Console.ReadLine()!;
  
-        Artista? artistaEncontrado = null;
- 
-        foreach (Artista artista in artistas)
-        {
-            if (artista.Nome == nomeBusca)
-            {
-                artistaEncontrado = artista;
-                break;
-            }
-        }
+        Artista? artistaEncontrado = _artistaDAO.BuscarPorNome(nomeBusca);
         if (artistaEncontrado == null)
         {
             Console.WriteLine("Artista não encontrado.");
@@ -87,6 +77,6 @@ public class ArtistaServicos
         }
  
         Console.WriteLine($"O artista {artistaEncontrado.Nome} foi removido com sucesso.");
-        artistas.Remove(artistaEncontrado);
+        _artistaDAO.Remover(artistaEncontrado);
     }
 }
