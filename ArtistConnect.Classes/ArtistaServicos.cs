@@ -1,9 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace ArtistConnect.Classes;
- 
+
 public class ArtistaServicos
 {
-    private List<Artista> artistas = new List<Artista>();
-     
     public void CadastrarArtista()
     {
         Artista artista = new Artista();
@@ -17,13 +17,20 @@ public class ArtistaServicos
         Console.Write("Digite seu gênero musical: ");
         artista.GeneroMusical = Console.ReadLine()!;
         
-        artistas.Add(artista);
+        using ArtistConnectContext context = new();
+        context.Artistas.Add(artista);
+        context.SaveChanges();
  
-        Console.WriteLine("Artista cadastrado com sucesso!");
+        Console.WriteLine($"Artista cadastrado com sucesso! Id: {artista.Id}");
     }
  
     public void ListarArtista()
     {
+        using ArtistConnectContext context = new();
+        List<Artista> artistas = context.Artistas.AsNoTracking()
+            .OrderBy(artista => artista.Nome)
+            .ToList();
+
         Console.WriteLine("Lista de Artistas Cadastrados:");
         if (artistas.Count == 0)
         {
@@ -33,6 +40,7 @@ public class ArtistaServicos
  
         foreach (Artista artista in artistas)
         {
+            Console.WriteLine($"Id: {artista.Id}");
             artista.ExibirDados();
             Console.WriteLine("-");
         }
@@ -40,53 +48,50 @@ public class ArtistaServicos
    
     public void AlterarArtista()
     {
-        Console.Write("Digite o nome do Artista: ");
-        string nomeBusca = Console.ReadLine()!;
- 
-        Artista? artistaEncontrado = null;
- 
-        foreach (Artista artista in artistas)
-        {
-            if (artista.Nome == nomeBusca)
-            {
-                artistaEncontrado = artista;
-                break;
-            }
-        }
+        int id = LerId("Digite o Id do artista: ");
+        if (id <= 0) return;
+
+        using ArtistConnectContext context = new();
+        Artista? artistaEncontrado = context.Artistas.Find(id);
         if (artistaEncontrado == null)
         {
             Console.WriteLine("Artista não encontrado.");
             return;
         }
-        Console.WriteLine("Alteração Bio: ");
-        Console.Write($"Digite a nova bio de {nomeBusca}: ");
-        artistaEncontrado.Bio = Console.ReadLine()!;
+        Console.Write($"Digite a nova bio de {artistaEncontrado.Nome}: ");
+        artistaEncontrado.Bio = Console.ReadLine()?.Trim();
+        context.SaveChanges();
  
-        Console.WriteLine($"Bio de {nomeBusca} alterada com sucesso!");
+        Console.WriteLine("Bio alterada com sucesso!");
     }
  
     public void RemoverArtista()
     {
-        Console.Write("Digite o nome do Artista que deseja remover: ");
-        string nomeBusca = Console.ReadLine()!;
- 
-        Artista? artistaEncontrado = null;
- 
-        foreach (Artista artista in artistas)
-        {
-            if (artista.Nome == nomeBusca)
-            {
-                artistaEncontrado = artista;
-                break;
-            }
-        }
+        int id = LerId("Digite o Id do artista que deseja remover: ");
+        if (id <= 0) return;
+
+        using ArtistConnectContext context = new();
+        Artista? artistaEncontrado = context.Artistas.Find(id);
         if (artistaEncontrado == null)
         {
             Console.WriteLine("Artista não encontrado.");
             return;
         }
  
+        context.Artistas.Remove(artistaEncontrado);
+        context.SaveChanges();
         Console.WriteLine($"O artista {artistaEncontrado.Nome} foi removido com sucesso.");
-        artistas.Remove(artistaEncontrado);
+    }
+
+    private static int LerId(string mensagem)
+    {
+        Console.Write(mensagem);
+        if (int.TryParse(Console.ReadLine(), out int id) && id > 0)
+        {
+            return id;
+        }
+
+        Console.WriteLine("Informe um Id válido.");
+        return 0;
     }
 }

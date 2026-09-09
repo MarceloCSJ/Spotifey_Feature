@@ -2,8 +2,8 @@ namespace ArtistConnect.Classes;
  
 public class Artista
 {
-    public string? ID { get; set; }
-    public string? Nome { get; set; }
+    public int Id { get; set; }
+    public string Nome { get; set; } = string.Empty;
     public string? Bio { get; set; }
     public string? GeneroMusical { get; set; }
     
