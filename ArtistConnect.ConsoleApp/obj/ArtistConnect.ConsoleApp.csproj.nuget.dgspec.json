@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\ArtistConnect.ConsoleApp.csproj": {}
+    "C:\\workplace\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\ArtistConnect.ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj": {
+    "C:\\workplace\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
+        "projectUniqueName": "C:\\workplace\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
         "projectName": "ArtistConnect.Classes",
-        "projectPath": "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
-        "packagesPath": "C:\\Users\\snati\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.Classes\\obj\\",
+        "projectPath": "C:\\workplace\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
+        "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
+        "outputPath": "C:\\workplace\\Spotifey_Feature\\ArtistConnect.Classes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\snati\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -59,21 +59,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\ArtistConnect.ConsoleApp.csproj": {
+    "C:\\workplace\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\ArtistConnect.ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\ArtistConnect.ConsoleApp.csproj",
+        "projectUniqueName": "C:\\workplace\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\ArtistConnect.ConsoleApp.csproj",
         "projectName": "ArtistConnect.ConsoleApp",
-        "projectPath": "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\ArtistConnect.ConsoleApp.csproj",
-        "packagesPath": "C:\\Users\\snati\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\obj\\",
+        "projectPath": "C:\\workplace\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\ArtistConnect.ConsoleApp.csproj",
+        "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
+        "outputPath": "C:\\workplace\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\snati\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -85,8 +85,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj": {
-                "projectPath": "C:\\Users\\snati\\OneDrive\\Área de Trabalho\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj"
+              "C:\\workplace\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj": {
+                "projectPath": "C:\\workplace\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj"
               }
             }
           }
@@ -122,7 +122,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

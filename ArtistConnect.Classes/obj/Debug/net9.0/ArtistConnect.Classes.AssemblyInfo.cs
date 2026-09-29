@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtistConnect.Classes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4ff9a1edaad4b7ab4e1c84012d8f7aafc2a9e18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff97e28b4a4c5bf88efcb113d913369deedee402")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtistConnect.Classes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtistConnect.Classes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

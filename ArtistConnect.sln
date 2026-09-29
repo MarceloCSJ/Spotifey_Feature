@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtistConnect.ConsoleApp", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtistConnect.Context", "ArtistConnect.Context\ArtistConnect.Context.csproj", "{12B2A73B-F0A6-44A5-8A5D-FE50A327C890}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtistConnect.WebAPI", "ArtistConnect.WebAPI\ArtistConnect.WebAPI.csproj", "{0C22577D-0C71-4F56-B809-33C03B799C72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{12B2A73B-F0A6-44A5-8A5D-FE50A327C890}.Release|x64.Build.0 = Release|Any CPU
 		{12B2A73B-F0A6-44A5-8A5D-FE50A327C890}.Release|x86.ActiveCfg = Release|Any CPU
 		{12B2A73B-F0A6-44A5-8A5D-FE50A327C890}.Release|x86.Build.0 = Release|Any CPU
+		{0C22577D-0C71-4F56-B809-33C03B799C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C22577D-0C71-4F56-B809-33C03B799C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C22577D-0C71-4F56-B809-33C03B799C72}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0C22577D-0C71-4F56-B809-33C03B799C72}.Debug|x64.Build.0 = Debug|Any CPU
+		{0C22577D-0C71-4F56-B809-33C03B799C72}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0C22577D-0C71-4F56-B809-33C03B799C72}.Debug|x86.Build.0 = Debug|Any CPU
+		{0C22577D-0C71-4F56-B809-33C03B799C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C22577D-0C71-4F56-B809-33C03B799C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C22577D-0C71-4F56-B809-33C03B799C72}.Release|x64.ActiveCfg = Release|Any CPU
+		{0C22577D-0C71-4F56-B809-33C03B799C72}.Release|x64.Build.0 = Release|Any CPU
+		{0C22577D-0C71-4F56-B809-33C03B799C72}.Release|x86.ActiveCfg = Release|Any CPU
+		{0C22577D-0C71-4F56-B809-33C03B799C72}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
