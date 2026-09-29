@@ -1,0 +1,12 @@
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.Model\bin\Debug\net9.0\ArtistConnect.Model.deps.json
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.Model\bin\Debug\net9.0\ArtistConnect.Model.dll
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.Model\bin\Debug\net9.0\ArtistConnect.Model.pdb
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.Model\obj\Debug\net9.0\ArtistConnect.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.Model\obj\Debug\net9.0\ArtistConnect.Model.AssemblyInfoInputs.cache
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.Model\obj\Debug\net9.0\ArtistConnect.Model.AssemblyInfo.cs
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.Model\obj\Debug\net9.0\ArtistConnect.Model.csproj.CoreCompileInputs.cache
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.Model\obj\Debug\net9.0\ArtistConnect.Model.sourcelink.json
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.Model\obj\Debug\net9.0\ArtistConnect.Model.dll
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.Model\obj\Debug\net9.0\refint\ArtistConnect.Model.dll
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.Model\obj\Debug\net9.0\ArtistConnect.Model.pdb
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.Model\obj\Debug\net9.0\ref\ArtistConnect.Model.dll

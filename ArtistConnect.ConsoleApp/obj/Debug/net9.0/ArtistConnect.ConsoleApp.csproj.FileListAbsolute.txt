@@ -71,3 +71,22 @@ C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.Console
 C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ArtistConnect.ConsoleApp.pdb
 C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ArtistConnect.ConsoleApp.genruntimeconfig.cache
 C:\Users\snati\OneDrive\Área de Trabalho\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ref\ArtistConnect.ConsoleApp.dll
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\bin\Debug\net9.0\ArtistConnect.ConsoleApp.exe
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\bin\Debug\net9.0\ArtistConnect.ConsoleApp.deps.json
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\bin\Debug\net9.0\ArtistConnect.ConsoleApp.runtimeconfig.json
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\bin\Debug\net9.0\ArtistConnect.ConsoleApp.dll
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\bin\Debug\net9.0\ArtistConnect.ConsoleApp.pdb
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\bin\Debug\net9.0\ArtistConnect.Classes.dll
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\bin\Debug\net9.0\ArtistConnect.Classes.pdb
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ArtistConnect.ConsoleApp.csproj.AssemblyReference.cache
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ArtistConnect.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ArtistConnect.ConsoleApp.AssemblyInfoInputs.cache
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ArtistConnect.ConsoleApp.AssemblyInfo.cs
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ArtistConnect.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ArtistConnect.ConsoleApp.sourcelink.json
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ArtistCo.203AFEC3.Up2Date
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ArtistConnect.ConsoleApp.dll
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\refint\ArtistConnect.ConsoleApp.dll
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ArtistConnect.ConsoleApp.pdb
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ArtistConnect.ConsoleApp.genruntimeconfig.cache
+C:\workplace\Spotfy\Spotifey_Feature\ArtistConnect.ConsoleApp\obj\Debug\net9.0\ref\ArtistConnect.ConsoleApp.dll

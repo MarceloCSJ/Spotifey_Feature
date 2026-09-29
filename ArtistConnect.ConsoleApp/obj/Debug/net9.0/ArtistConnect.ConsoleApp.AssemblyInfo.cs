@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtistConnect.ConsoleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff97e28b4a4c5bf88efcb113d913369deedee402")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a55b7404e64c7881002f7574c0735c33edb21e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtistConnect.ConsoleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtistConnect.ConsoleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
