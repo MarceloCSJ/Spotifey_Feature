@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj": {}
+    "c:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Context\\ArtistConnect.Context.csproj": {}
   },
   "projects": {
-    "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj": {
+    "c:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Context\\ArtistConnect.Context.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
-        "projectName": "ArtistConnect.Classes",
-        "projectPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj",
+        "projectUniqueName": "c:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Context\\ArtistConnect.Context.csproj",
+        "projectName": "ArtistConnect.Context",
+        "projectPath": "c:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Context\\ArtistConnect.Context.csproj",
         "packagesPath": "C:\\Users\\Prog_Sis\\.nuget\\packages\\",
-        "outputPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Classes\\obj\\",
+        "outputPath": "c:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Context\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Prog_Sis\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
