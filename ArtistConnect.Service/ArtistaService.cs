@@ -1,6 +1,4 @@
-using ArtistConnect.Model;
-
-namespace ArtistConnect.Service;
+namespace ArtistConnect.Model.Entities;
 
 public class ArtistaService
 {
