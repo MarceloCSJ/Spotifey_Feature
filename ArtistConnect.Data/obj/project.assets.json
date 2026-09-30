@@ -911,6 +911,29 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "ArtistConnect.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ArtistConnect.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ArtistConnect.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ArtistConnect.Business.dll": {}
+        }
+      },
+      "ArtistConnect.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ArtistConnect.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ArtistConnect.Model.dll": {}
+        }
       }
     }
   },
@@ -2785,28 +2808,40 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ArtistConnect.Business/1.0.0": {
+      "type": "project",
+      "path": "../ArtistConnect.Business/ArtistConnect.Business.csproj",
+      "msbuildProject": "../ArtistConnect.Business/ArtistConnect.Business.csproj"
+    },
+    "ArtistConnect.Model/1.0.0": {
+      "type": "project",
+      "path": "../ArtistConnect.Model/ArtistConnect.Model.csproj",
+      "msbuildProject": "../ArtistConnect.Model/ArtistConnect.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "ArtistConnect.Business >= 1.0.0",
+      "ArtistConnect.Model >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "Pomelo.EntityFrameworkCore.MySql >= 9.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Suporte\\.nuget\\packages\\": {}
+    "C:\\Users\\Prog_Sis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\workplace\\Spotfy\\Spotifey_Feature\\ArtistConnect.Data\\ArtistConnect.Data.csproj",
+      "projectUniqueName": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Data\\ArtistConnect.Data.csproj",
       "projectName": "ArtistConnect.Data",
-      "projectPath": "C:\\workplace\\Spotfy\\Spotifey_Feature\\ArtistConnect.Data\\ArtistConnect.Data.csproj",
-      "packagesPath": "C:\\Users\\Suporte\\.nuget\\packages\\",
-      "outputPath": "C:\\workplace\\Spotfy\\Spotifey_Feature\\ArtistConnect.Data\\obj\\",
+      "projectPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Data\\ArtistConnect.Data.csproj",
+      "packagesPath": "C:\\Users\\Prog_Sis\\.nuget\\packages\\",
+      "outputPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Suporte\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Prog_Sis\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -2817,7 +2852,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Business\\ArtistConnect.Business.csproj": {
+              "projectPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Business\\ArtistConnect.Business.csproj"
+            },
+            "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Model\\ArtistConnect.Model.csproj": {
+              "projectPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Model\\ArtistConnect.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
