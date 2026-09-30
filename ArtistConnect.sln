@@ -9,10 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtistConnect.ConsoleApp", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtistConnect.Context", "ArtistConnect.Context\ArtistConnect.Context.csproj", "{12B2A73B-F0A6-44A5-8A5D-FE50A327C890}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtistConnect.Model", "ArtistConnect.Model\ArtistConnect.Model.csproj", "{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtistConnect.Service", "ArtistConnect.Service\ArtistConnect.Service.csproj", "{9E420F3E-5394-48AD-89CC-A1AB4F96D364}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,30 +55,6 @@ Global
 		{12B2A73B-F0A6-44A5-8A5D-FE50A327C890}.Release|x64.Build.0 = Release|Any CPU
 		{12B2A73B-F0A6-44A5-8A5D-FE50A327C890}.Release|x86.ActiveCfg = Release|Any CPU
 		{12B2A73B-F0A6-44A5-8A5D-FE50A327C890}.Release|x86.Build.0 = Release|Any CPU
-		{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}.Debug|x64.Build.0 = Debug|Any CPU
-		{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}.Debug|x86.Build.0 = Release|Any CPU
-		{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}.Release|Any CPU.Build.0 = Release|Any CPU
-		{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}.Release|x64.ActiveCfg = Release|Any CPU
-		{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}.Release|x64.Build.0 = Release|Any CPU
-		{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}.Release|x86.ActiveCfg = Release|Any CPU
-		{61D2ECF9-57B4-4CE2-97C8-3938C7AB3038}.Release|x86.Build.0 = Release|Any CPU
-		{9E420F3E-5394-48AD-89CC-A1AB4F96D364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E420F3E-5394-48AD-89CC-A1AB4F96D364}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E420F3E-5394-48AD-89CC-A1AB4F96D364}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{9E420F3E-5394-48AD-89CC-A1AB4F96D364}.Debug|x64.Build.0 = Debug|Any CPU
-		{9E420F3E-5394-48AD-89CC-A1AB4F96D364}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{9E420F3E-5394-48AD-89CC-A1AB4F96D364}.Debug|x86.Build.0 = Debug|Any CPU
-		{9E420F3E-5394-48AD-89CC-A1AB4F96D364}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E420F3E-5394-48AD-89CC-A1AB4F96D364}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9E420F3E-5394-48AD-89CC-A1AB4F96D364}.Release|x64.ActiveCfg = Release|Any CPU
-		{9E420F3E-5394-48AD-89CC-A1AB4F96D364}.Release|x64.Build.0 = Release|Any CPU
-		{9E420F3E-5394-48AD-89CC-A1AB4F96D364}.Release|x86.ActiveCfg = Release|Any CPU
-		{9E420F3E-5394-48AD-89CC-A1AB4F96D364}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

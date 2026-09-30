@@ -1,0 +1,16 @@
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\bin\Debug\net9.0\ArtistConnect.Business.deps.json
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\bin\Debug\net9.0\ArtistConnect.Business.dll
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\bin\Debug\net9.0\ArtistConnect.Business.pdb
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\bin\Debug\net9.0\ArtistConnect.Model.dll
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\bin\Debug\net9.0\ArtistConnect.Model.pdb
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\obj\Debug\net9.0\ArtistConnect.Business.csproj.AssemblyReference.cache
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\obj\Debug\net9.0\ArtistConnect.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\obj\Debug\net9.0\ArtistConnect.Business.AssemblyInfoInputs.cache
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\obj\Debug\net9.0\ArtistConnect.Business.AssemblyInfo.cs
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\obj\Debug\net9.0\ArtistConnect.Business.csproj.CoreCompileInputs.cache
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\obj\Debug\net9.0\ArtistConnect.Business.sourcelink.json
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\obj\Debug\net9.0\ArtistCo.57CB70F5.Up2Date
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\obj\Debug\net9.0\ArtistConnect.Business.dll
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\obj\Debug\net9.0\refint\ArtistConnect.Business.dll
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\obj\Debug\net9.0\ArtistConnect.Business.pdb
+C:\workplace\ArtistConnect\Spotifey_Feature\ArtistConnect.Business\obj\Debug\net9.0\ref\ArtistConnect.Business.dll
