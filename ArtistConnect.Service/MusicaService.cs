@@ -1,4 +1,6 @@
-namespace ArtistConnect.Model.Entities;
+using ArtistConnect.Model.Entities;
+
+namespace ArtistConnect.Service;
 
 public class MusicaService
 {

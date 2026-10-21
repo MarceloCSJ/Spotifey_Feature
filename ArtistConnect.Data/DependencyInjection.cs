@@ -16,6 +16,7 @@ public static class DependencyInjection
             options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
         services.AddScoped<IArtistaDAO, ArtistaDAO>();
         services.AddScoped<IMusicaDAO, MusicaDAO>();
+        services.AddScoped<IUsuarioDAO, UsuarioDAO>();
 
         return services;
     }

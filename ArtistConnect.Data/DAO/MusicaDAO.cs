@@ -37,4 +37,35 @@ public class MusicaDAO : IMusicaDAO
         _context.Musicas.Remove(musica);
         _context.SaveChanges();
     }
+
+    public async Task<IReadOnlyList<Musica>> ListarAsync(CancellationToken cancellationToken) =>
+        await _context.Musicas.AsNoTracking()
+            .OrderBy(musica => musica.ID)
+            .ToListAsync(cancellationToken);
+
+    public Task<Musica?> BuscarPorIdAsync(int id, CancellationToken cancellationToken) =>
+        _context.Musicas.AsNoTracking()
+            .FirstOrDefaultAsync(musica => musica.ID == id, cancellationToken);
+
+    public Task<Musica?> BuscarPorTituloAsync(string titulo, CancellationToken cancellationToken) =>
+        _context.Musicas.AsNoTracking()
+            .FirstOrDefaultAsync(musica => musica.Titulo == titulo, cancellationToken);
+
+    public async Task InserirAsync(Musica musica, CancellationToken cancellationToken)
+    {
+        await _context.Musicas.AddAsync(musica, cancellationToken);
+        await _context.SaveChangesAsync(cancellationToken);
+    }
+
+    public async Task AtualizarAsync(Musica musica, CancellationToken cancellationToken)
+    {
+        _context.Musicas.Update(musica);
+        await _context.SaveChangesAsync(cancellationToken);
+    }
+
+    public async Task ExcluirAsync(Musica musica, CancellationToken cancellationToken)
+    {
+        _context.Musicas.Remove(musica);
+        await _context.SaveChangesAsync(cancellationToken);
+    }
 }

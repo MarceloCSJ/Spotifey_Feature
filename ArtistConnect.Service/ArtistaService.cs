@@ -1,4 +1,6 @@
-namespace ArtistConnect.Model.Entities;
+using ArtistConnect.Model.Entities;
+
+namespace ArtistConnect.Service;
 
 public class ArtistaService
 {
@@ -36,4 +38,3 @@ public class ArtistaService
         return artista is not null && artistas.Remove(artista);
     }
 }
-

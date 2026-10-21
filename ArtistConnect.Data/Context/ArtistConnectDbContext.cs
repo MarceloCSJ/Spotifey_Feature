@@ -7,6 +7,7 @@ public class ArtistConnectDbContext : DbContext
 {
     public DbSet<Artista> Artistas => Set<Artista>();
     public DbSet<Musica> Musicas => Set<Musica>();
+    public DbSet<Usuario> Usuarios => Set<Usuario>();
 
     public ArtistConnectDbContext(DbContextOptions<ArtistConnectDbContext> options)
         : base(options)

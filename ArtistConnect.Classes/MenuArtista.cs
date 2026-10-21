@@ -1,4 +1,4 @@
-using ArtistConnect.Model;
+using ArtistConnect.Model.Entities;
 using ArtistConnect.Service;
 
 namespace ArtistConnect.Classes;
@@ -63,13 +63,13 @@ public class MenuArtista
         Artista artista = new();
 
         Console.Write("Cadastre seu nome artístico: ");
-        artista.Nome = Console.ReadLine();
+        artista.Nome = Console.ReadLine() ?? string.Empty;
 
         Console.Write("Digite sua bio: ");
-        artista.Bio = Console.ReadLine();
+        artista.Bio = Console.ReadLine() ?? string.Empty;
 
         Console.Write("Digite seu gênero musical: ");
-        artista.GeneroMusical = Console.ReadLine();
+        artista.GeneroMusical = Console.ReadLine() ?? string.Empty;
 
         artistaService.CadastrarArtista(artista);
         Console.WriteLine("Artista cadastrado com sucesso!");
