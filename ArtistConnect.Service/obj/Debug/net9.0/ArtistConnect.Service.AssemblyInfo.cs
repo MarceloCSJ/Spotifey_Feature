@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtistConnect.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a55b7404e64c7881002f7574c0735c33edb21e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36ae97d1abb717bf291ca0b34714430a767c7291")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtistConnect.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtistConnect.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

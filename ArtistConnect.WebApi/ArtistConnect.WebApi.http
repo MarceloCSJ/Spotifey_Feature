@@ -1,0 +1,91 @@
+@baseUrl = http://localhost:5084
+@email = teste@artistconnect.local
+@senha = teste12345
+@token = COLE_O_ACCESS_TOKEN_AQUI
+
+### Registra uma conta de teste (somente Development; execute uma vez)
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "nome": "Usuário de Teste",
+  "email": "{{email}}",
+  "senha": "{{senha}}"
+}
+
+### Faz login e copia o accessToken da resposta para @token
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "{{email}}",
+  "senha": "{{senha}}"
+}
+
+### Lista artistas
+GET {{baseUrl}}/api/artistas
+Authorization: Bearer {{token}}
+
+### Busca artista existente ou inexistente
+GET {{baseUrl}}/api/artistas/1
+Authorization: Bearer {{token}}
+
+### Cadastra artista
+POST {{baseUrl}}/api/artistas
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "nome": "Artista Exemplo",
+  "bio": "Artista independente.",
+  "generoMusical": "Indie"
+}
+
+### Atualiza artista
+PUT {{baseUrl}}/api/artistas/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "nome": "Artista Atualizado",
+  "bio": "Biografia atualizada.",
+  "generoMusical": "Indie"
+}
+
+### Exclui artista
+DELETE {{baseUrl}}/api/artistas/1
+Authorization: Bearer {{token}}
+
+### Lista músicas
+GET {{baseUrl}}/api/musicas
+Authorization: Bearer {{token}}
+
+### Busca música inexistente
+GET {{baseUrl}}/api/musicas/99999
+Authorization: Bearer {{token}}
+
+### Cadastra música
+POST {{baseUrl}}/api/musicas
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "titulo": "Nova Música",
+  "artistaResponsavel": "Artista Exemplo",
+  "duracao": "03:53"
+}
+
+### Atualiza música
+PUT {{baseUrl}}/api/musicas/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "titulo": "Música Atualizada",
+  "artistaResponsavel": "Artista Exemplo",
+  "duracao": "04:12"
+}
+
+### Exclui música
+DELETE {{baseUrl}}/api/musicas/1
+Authorization: Bearer {{token}}

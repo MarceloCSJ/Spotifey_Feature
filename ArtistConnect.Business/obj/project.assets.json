@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\a\\.nuget\\packages\\": {}
+    "C:\\Users\\Suporte\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Business\\ArtistConnect.Business.csproj",
+      "projectUniqueName": "C:\\workplace\\Spotfy\\artist\\Spotifey_Feature\\ArtistConnect.Business\\ArtistConnect.Business.csproj",
       "projectName": "ArtistConnect.Business",
-      "projectPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Business\\ArtistConnect.Business.csproj",
-      "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-      "outputPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Business\\obj\\",
+      "projectPath": "C:\\workplace\\Spotfy\\artist\\Spotifey_Feature\\ArtistConnect.Business\\ArtistConnect.Business.csproj",
+      "packagesPath": "C:\\Users\\Suporte\\.nuget\\packages\\",
+      "outputPath": "C:\\workplace\\Spotfy\\artist\\Spotifey_Feature\\ArtistConnect.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Suporte\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -51,8 +51,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Model\\ArtistConnect.Model.csproj": {
-              "projectPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Model\\ArtistConnect.Model.csproj"
+            "C:\\workplace\\Spotfy\\artist\\Spotifey_Feature\\ArtistConnect.Model\\ArtistConnect.Model.csproj": {
+              "projectPath": "C:\\workplace\\Spotfy\\artist\\Spotifey_Feature\\ArtistConnect.Model\\ArtistConnect.Model.csproj"
             }
           }
         }
@@ -88,7 +88,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

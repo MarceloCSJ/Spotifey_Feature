@@ -1,8 +1,11 @@
+using ArtistConnect.Service.Interfaces;
+
 namespace ArtistConnect.Classes;
  
-public class MenuMusica
+public class MenuMusica(IMusicaService musicaService)
 {
-    private MusicaServicos musicaServicos = new MusicaServicos();
+    private readonly MusicaServicos musicaServicos = new(musicaService);
+
  
     public void Menu()
     {
