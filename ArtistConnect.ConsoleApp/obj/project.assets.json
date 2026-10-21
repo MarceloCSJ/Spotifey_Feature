@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {
-      "ArtistConnect.Classes/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/ArtistConnect.Classes.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ArtistConnect.Classes.dll": {}
-        }
-      }
-    }
+    "net9.0": {}
   },
-  "libraries": {
-    "ArtistConnect.Classes/1.0.0": {
-      "type": "project",
-      "path": "../ArtistConnect.Classes/ArtistConnect.Classes.csproj",
-      "msbuildProject": "../ArtistConnect.Classes/ArtistConnect.Classes.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net9.0": [
-      "ArtistConnect.Classes >= 1.0.0"
-    ]
+    "net9.0": []
   },
   "packageFolders": {
     "C:\\Users\\a\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\ArtistConnect.ConsoleApp.csproj",
+      "projectUniqueName": "C:\\workplace\\DesenvolvedorWeb\\BackEnd\\ArtistConnect_V2\\Spotifey_Feature-Backup\\ArtistConnect.ConsoleApp\\ArtistConnect.ConsoleApp.csproj",
       "projectName": "ArtistConnect.ConsoleApp",
-      "projectPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\ArtistConnect.ConsoleApp.csproj",
+      "projectPath": "C:\\workplace\\DesenvolvedorWeb\\BackEnd\\ArtistConnect_V2\\Spotifey_Feature-Backup\\ArtistConnect.ConsoleApp\\ArtistConnect.ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-      "outputPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.ConsoleApp\\obj\\",
+      "outputPath": "C:\\workplace\\DesenvolvedorWeb\\BackEnd\\ArtistConnect_V2\\Spotifey_Feature-Backup\\ArtistConnect.ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -50,11 +31,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj": {
-              "projectPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Classes\\ArtistConnect.Classes.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtistConnect.Classes", "ArtistConnect.Classes\ArtistConnect.Classes.csproj", "{8EEFD6DB-0DE5-493B-912D-30C6B7130747}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtistConnect.ConsoleApp", "ArtistConnect.ConsoleApp\ArtistConnect.ConsoleApp.csproj", "{E715545B-A10A-4843-9A34-21F7B3C3D56B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtistConnect.Context", "ArtistConnect.Context\ArtistConnect.Context.csproj", "{12B2A73B-F0A6-44A5-8A5D-FE50A327C890}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtistConnect.WebAPI", "ArtistConnect.WebAPI\ArtistConnect.WebAPI.csproj", "{0C22577D-0C71-4F56-B809-33C03B799C72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArtistConnect.Model", "ArtistConnect.Model", "{28814E57-6B99-8254-4627-EF4474ADAE59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtistConnect.Classes", "ArtistConnect.Model\ArtistConnect.Classes.csproj", "{64CFDD44-E729-403C-946C-531C25457BAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +23,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8EEFD6DB-0DE5-493B-912D-30C6B7130747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EEFD6DB-0DE5-493B-912D-30C6B7130747}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EEFD6DB-0DE5-493B-912D-30C6B7130747}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{8EEFD6DB-0DE5-493B-912D-30C6B7130747}.Debug|x64.Build.0 = Debug|Any CPU
-		{8EEFD6DB-0DE5-493B-912D-30C6B7130747}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8EEFD6DB-0DE5-493B-912D-30C6B7130747}.Debug|x86.Build.0 = Debug|Any CPU
-		{8EEFD6DB-0DE5-493B-912D-30C6B7130747}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8EEFD6DB-0DE5-493B-912D-30C6B7130747}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8EEFD6DB-0DE5-493B-912D-30C6B7130747}.Release|x64.ActiveCfg = Release|Any CPU
-		{8EEFD6DB-0DE5-493B-912D-30C6B7130747}.Release|x64.Build.0 = Release|Any CPU
-		{8EEFD6DB-0DE5-493B-912D-30C6B7130747}.Release|x86.ActiveCfg = Release|Any CPU
-		{8EEFD6DB-0DE5-493B-912D-30C6B7130747}.Release|x86.Build.0 = Release|Any CPU
 		{E715545B-A10A-4843-9A34-21F7B3C3D56B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E715545B-A10A-4843-9A34-21F7B3C3D56B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E715545B-A10A-4843-9A34-21F7B3C3D56B}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -69,8 +59,23 @@ Global
 		{0C22577D-0C71-4F56-B809-33C03B799C72}.Release|x64.Build.0 = Release|Any CPU
 		{0C22577D-0C71-4F56-B809-33C03B799C72}.Release|x86.ActiveCfg = Release|Any CPU
 		{0C22577D-0C71-4F56-B809-33C03B799C72}.Release|x86.Build.0 = Release|Any CPU
+		{64CFDD44-E729-403C-946C-531C25457BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64CFDD44-E729-403C-946C-531C25457BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64CFDD44-E729-403C-946C-531C25457BAE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{64CFDD44-E729-403C-946C-531C25457BAE}.Debug|x64.Build.0 = Debug|Any CPU
+		{64CFDD44-E729-403C-946C-531C25457BAE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{64CFDD44-E729-403C-946C-531C25457BAE}.Debug|x86.Build.0 = Debug|Any CPU
+		{64CFDD44-E729-403C-946C-531C25457BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64CFDD44-E729-403C-946C-531C25457BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64CFDD44-E729-403C-946C-531C25457BAE}.Release|x64.ActiveCfg = Release|Any CPU
+		{64CFDD44-E729-403C-946C-531C25457BAE}.Release|x64.Build.0 = Release|Any CPU
+		{64CFDD44-E729-403C-946C-531C25457BAE}.Release|x86.ActiveCfg = Release|Any CPU
+		{64CFDD44-E729-403C-946C-531C25457BAE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64CFDD44-E729-403C-946C-531C25457BAE} = {28814E57-6B99-8254-4627-EF4474ADAE59}
 	EndGlobalSection
 EndGlobal

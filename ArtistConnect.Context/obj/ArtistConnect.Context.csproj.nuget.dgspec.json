@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Context\\ArtistConnect.Context.csproj": {}
+    "C:\\workplace\\DesenvolvedorWeb\\BackEnd\\ArtistConnect_V2\\Spotifey_Feature-Backup\\ArtistConnect.Context\\ArtistConnect.Context.csproj": {}
   },
   "projects": {
-    "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Context\\ArtistConnect.Context.csproj": {
+    "C:\\workplace\\DesenvolvedorWeb\\BackEnd\\ArtistConnect_V2\\Spotifey_Feature-Backup\\ArtistConnect.Context\\ArtistConnect.Context.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Context\\ArtistConnect.Context.csproj",
+        "projectUniqueName": "C:\\workplace\\DesenvolvedorWeb\\BackEnd\\ArtistConnect_V2\\Spotifey_Feature-Backup\\ArtistConnect.Context\\ArtistConnect.Context.csproj",
         "projectName": "ArtistConnect.Context",
-        "projectPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Context\\ArtistConnect.Context.csproj",
+        "projectPath": "C:\\workplace\\DesenvolvedorWeb\\BackEnd\\ArtistConnect_V2\\Spotifey_Feature-Backup\\ArtistConnect.Context\\ArtistConnect.Context.csproj",
         "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-        "outputPath": "C:\\workplace\\ArtistConnect\\Spotifey_Feature\\ArtistConnect.Context\\obj\\",
+        "outputPath": "C:\\workplace\\DesenvolvedorWeb\\BackEnd\\ArtistConnect_V2\\Spotifey_Feature-Backup\\ArtistConnect.Context\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config"
