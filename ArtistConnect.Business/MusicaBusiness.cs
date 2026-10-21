@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
+using ArtistConnect.Business.Exceptions;
 using ArtistConnect.Business.Interfaces;
 using ArtistConnect.Model.Entities;
 
@@ -19,6 +20,20 @@ public sealed class MusicaBusiness
     }
 
     public void Validar(Musica musica)
+    {
+        ValidarCampos(musica);
+
+        if (!_artistaDAO.Listar().Any(artista =>
+                string.Equals(
+                    artista.Nome.Trim(),
+                    musica.ArtistaResponsavel!.Trim(),
+                    StringComparison.OrdinalIgnoreCase)))
+        {
+            throw new ValidationException("O artista informado não está cadastrado.");
+        }
+    }
+
+    private static void ValidarCampos(Musica musica)
     {
         ArgumentNullException.ThrowIfNull(musica);
 
@@ -42,12 +57,6 @@ public sealed class MusicaBusiness
             throw new ValidationException("O artista responsável deve ter no máximo 100 caracteres.");
         }
 
-        if (!_artistaDAO.Listar().Any(artista =>
-                string.Equals(artista.Nome.Trim(), musica.ArtistaResponsavel.Trim(), StringComparison.OrdinalIgnoreCase)))
-        {
-            throw new ValidationException("O artista informado não está cadastrado.");
-        }
-
         if (string.IsNullOrWhiteSpace(musica.Duracao))
         {
             throw new ValidationException("A duração da música é obrigatória.");
@@ -64,51 +73,69 @@ public sealed class MusicaBusiness
         }
     }
 
-    public void Cadastrar(Musica musica)
+    public async Task ValidarAsync(Musica musica, CancellationToken cancellationToken)
     {
-        Validar(musica);
+        ValidarCampos(musica);
 
-        if (ExisteTituloDuplicado(musica.Titulo))
+        IReadOnlyList<Artista> artistas = await _artistaDAO.ListarAsync(cancellationToken);
+        if (!artistas.Any(artista =>
+                string.Equals(
+                    artista.Nome.Trim(),
+                    musica.ArtistaResponsavel!.Trim(),
+                    StringComparison.OrdinalIgnoreCase)))
         {
-            throw new ValidationException("Já existe uma música cadastrada com esse título.");
+            throw new ValidationException("O artista informado não está cadastrado.");
         }
-
-        _musicaDAO.Inserir(musica);
     }
 
-    public void Atualizar(Musica musica)
+    public async Task CadastrarAsync(Musica musica, CancellationToken cancellationToken)
+    {
+        await ValidarAsync(musica, cancellationToken);
+
+        if (await ExisteTituloDuplicadoAsync(musica.Titulo, null, cancellationToken))
+        {
+            throw new DuplicateEntityException("Já existe uma música cadastrada com esse título.");
+        }
+
+        await _musicaDAO.InserirAsync(musica, cancellationToken);
+    }
+
+    public async Task AtualizarAsync(Musica musica, CancellationToken cancellationToken)
     {
         ArgumentNullException.ThrowIfNull(musica);
 
-        if (!_musicaDAO.Listar().Any(item => item.ID == musica.ID))
+        if (await _musicaDAO.BuscarPorIdAsync(musica.ID, cancellationToken) is null)
         {
-            throw new ValidationException("Não é possível alterar uma música que não existe.");
+            throw new KeyNotFoundException("A música solicitada não foi encontrada.");
         }
 
-        Validar(musica);
+        await ValidarAsync(musica, cancellationToken);
 
-        if (ExisteTituloDuplicado(musica.Titulo, musica.ID))
+        if (await ExisteTituloDuplicadoAsync(musica.Titulo, musica.ID, cancellationToken))
         {
-            throw new ValidationException("Já existe outra música cadastrada com esse título.");
+            throw new DuplicateEntityException("Já existe outra música cadastrada com esse título.");
         }
 
-        _musicaDAO.Atualizar(musica);
+        await _musicaDAO.AtualizarAsync(musica, cancellationToken);
     }
 
-    public void Excluir(int musicaId)
+    public async Task ExcluirAsync(int musicaId, CancellationToken cancellationToken)
     {
-        Musica? musica = _musicaDAO.Listar().FirstOrDefault(item => item.ID == musicaId);
+        Musica? musica = await _musicaDAO.BuscarPorIdAsync(musicaId, cancellationToken);
 
         if (musica is null)
         {
-            throw new ValidationException("Não é possível excluir uma música que não existe.");
+            throw new KeyNotFoundException("A música solicitada não foi encontrada.");
         }
 
-        _musicaDAO.Excluir(musica);
+        await _musicaDAO.ExcluirAsync(musica, cancellationToken);
     }
 
-    private bool ExisteTituloDuplicado(string titulo, int? idIgnorado = null) =>
-        _musicaDAO.Listar().Any(item =>
+    private async Task<bool> ExisteTituloDuplicadoAsync(
+        string titulo,
+        int? idIgnorado,
+        CancellationToken cancellationToken) =>
+        (await _musicaDAO.ListarAsync(cancellationToken)).Any(item =>
             item.ID != idIgnorado &&
             string.Equals(item.Titulo.Trim(), titulo.Trim(), StringComparison.OrdinalIgnoreCase));
-} 
+}

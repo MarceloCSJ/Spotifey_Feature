@@ -1,12 +1,11 @@
-using ArtistConnect.Model;
-using ArtistConnect.Service;
+using ArtistConnect.Service.Contracts;
+using ArtistConnect.Service.Interfaces;
 
 namespace ArtistConnect.Classes;
  
-public class MenuArtista
+public class MenuArtista(IArtistaService artistaService)
 {
-    private readonly ArtistaService artistaService = new();
- 
+
     public void Menu()
     {
         int escolha;
@@ -60,24 +59,28 @@ public class MenuArtista
 
     private void CadastrarArtista()
     {
-        Artista artista = new();
-
         Console.Write("Cadastre seu nome artístico: ");
-        artista.Nome = Console.ReadLine();
+        string nome = Console.ReadLine() ?? string.Empty;
 
         Console.Write("Digite sua bio: ");
-        artista.Bio = Console.ReadLine();
+        string bio = Console.ReadLine() ?? string.Empty;
 
         Console.Write("Digite seu gênero musical: ");
-        artista.GeneroMusical = Console.ReadLine();
+        string genero = Console.ReadLine() ?? string.Empty;
 
-        artistaService.CadastrarArtista(artista);
-        Console.WriteLine("Artista cadastrado com sucesso!");
+        Executar(() =>
+        {
+            artistaService.CadastrarAsync(
+                new CreateArtistaRequest { Nome = nome, Bio = bio, GeneroMusical = genero },
+                CancellationToken.None).GetAwaiter().GetResult();
+            Console.WriteLine("Artista cadastrado com sucesso!");
+        });
     }
 
-    private void ListarArtistas()
+    private void ListarArtistas() => Executar(() =>
     {
-        IReadOnlyList<Artista> artistas = artistaService.ListarArtistas();
+        IReadOnlyList<ArtistaResponse> artistas =
+            artistaService.ListarAsync(CancellationToken.None).GetAwaiter().GetResult();
         Console.WriteLine("Lista de Artistas Cadastrados:");
 
         if (artistas.Count == 0)
@@ -86,14 +89,14 @@ public class MenuArtista
             return;
         }
 
-        foreach (Artista artista in artistas)
+        foreach (ArtistaResponse artista in artistas)
         {
             Console.WriteLine($"Artista: {artista.Nome}");
             Console.WriteLine($"Bio: {artista.Bio}");
             Console.WriteLine($"Gênero Musical: {artista.GeneroMusical}");
             Console.WriteLine("-");
         }
-    }
+    });
 
     private void AlterarBioArtista()
     {
@@ -103,9 +106,26 @@ public class MenuArtista
         Console.Write("Digite a nova bio: ");
         string novaBio = Console.ReadLine() ?? string.Empty;
 
-        Console.WriteLine(artistaService.AlterarBioArtista(nome, novaBio)
-            ? "Bio do artista alterada com sucesso!"
-            : "Artista não encontrado.");
+        Executar(() =>
+        {
+            ArtistaResponse? artista = BuscarPorNome(nome);
+            if (artista is null)
+            {
+                Console.WriteLine("Artista não encontrado.");
+                return;
+            }
+
+            artistaService.AtualizarAsync(
+                artista.Id,
+                new UpdateArtistaRequest
+                {
+                    Nome = artista.Nome,
+                    Bio = novaBio,
+                    GeneroMusical = artista.GeneroMusical ?? string.Empty
+                },
+                CancellationToken.None).GetAwaiter().GetResult();
+            Console.WriteLine("Bio do artista alterada com sucesso!");
+        });
     }
 
     private void RemoverArtista()
@@ -113,8 +133,33 @@ public class MenuArtista
         Console.Write("Digite o nome do artista que deseja remover: ");
         string nome = Console.ReadLine() ?? string.Empty;
 
-        Console.WriteLine(artistaService.RemoverArtista(nome)
-            ? $"O artista {nome} foi removido com sucesso."
-            : "Artista não encontrado.");
+        Executar(() =>
+        {
+            ArtistaResponse? artista = BuscarPorNome(nome);
+            if (artista is null)
+            {
+                Console.WriteLine("Artista não encontrado.");
+                return;
+            }
+
+            artistaService.ExcluirAsync(artista.Id, CancellationToken.None).GetAwaiter().GetResult();
+            Console.WriteLine($"O artista {nome} foi removido com sucesso.");
+        });
+    }
+
+    private ArtistaResponse? BuscarPorNome(string nome) =>
+        artistaService.ListarAsync(CancellationToken.None).GetAwaiter().GetResult()
+            .FirstOrDefault(a => string.Equals(a.Nome, nome.Trim(), StringComparison.OrdinalIgnoreCase));
+
+    private static void Executar(Action acao)
+    {
+        try
+        {
+            acao();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro: {ex.InnerException?.Message ?? ex.Message}");
+        }
     }
 }

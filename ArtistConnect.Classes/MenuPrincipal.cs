@@ -1,12 +1,10 @@
 namespace ArtistConnect.Classes;
  
-public class MenuPrincipal
+public class MenuPrincipal(MenuArtista menuArtista, MenuMusica menuMusica)
 {
     public void Menu()
     {
         int escolha;
-        MenuArtista menuArtista = new MenuArtista();
-        MenuMusica menuMusica = new MenuMusica();
         MenuGenero menuGenero = new MenuGenero();
  
         do
